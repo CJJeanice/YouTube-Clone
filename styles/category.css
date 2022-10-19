@@ -1,0 +1,44 @@
+.categories {
+    padding: 1rem 2rem;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+
+.category-section {
+    display: flex;
+    overflow: hidden;
+}
+
+.category,
+.category-active {
+    margin-right: 8px;
+    word-wrap: none;
+    white-space: nowrap;
+    border: 1px solid #CCC;
+    border-radius: 900px;
+    background-color: #E7E7E7;
+    padding: .5rem 1rem;
+    font-size: inherit;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+
+.category:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.category-active:hover{
+    background-color: rgb(150, 148, 148);
+}
+
+.category-active {
+    background-color: rgb(58, 55, 55);
+    color: white;
+    border-color: #EEE;
+}
+
+.category:last-child {
+    margin-right: 0;
+}

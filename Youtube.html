@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> YouTube.com Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+
+
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/category.css">
+
+    </head>
+    <body>
+        <header class="header"> 
+            <!-- When creating button it will have a mandatory border 
+                while a div will not have a border around it. -->
+            <div class="left-section"> 
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg" > 
+                <div class="youtube-logo-button" > 
+                    <img class="youtube-logo" src="icons/youtube-logo.svg">
+                    <div class="tooltip" >YouTube Home</div>
+                </div>
+            </div>
+
+
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip" >Search</div>
+                </button> 
+                <button class="voice-search-button">
+                    <img  class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip" >Search with your voice</div>
+                </button>
+            </div>
+
+
+            <div class="right-section"> 
+                <div class="youtube-plus-icon-container" > 
+                    <img class="video-plus-icon" src="icons/video-plus.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div>
+                    <button class="youtube-apps-button" >
+                        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                        <div class="tooltip">Youtube Apps</div>
+                    </button>
+                </div>
+                <div class="notifications-icon-container"> 
+                    <button class="notifications-button" > 
+                        <img class="notifications-icon" src="icons/notifications.svg">
+                        <div class="tooltip">Notifications</div>
+                        <div class="notifications-count">8</div>
+                    </button>
+                </div> 
+                <img class="personal-icon" src="Pictures/professional-pfp.jpg">
+            </div>
+        </header>
+
+
+        <div class="categories" > 
+            <section class="category-section">
+                <button class="category-active" >All</button>
+                <button class="category" >Live</button>
+                <button class="category" >Computer Programming</button>
+                <button class="category" >Mixes</button>
+                <button class="category" >Music</button>
+                <button class="category" >Game Show</button>
+                <button class="category" >Wildlife</button>
+                <button class="category" >Cooking Show</button>
+                <button class="category" >Gaming</button>
+                <button class="category" >Puppies</button>
+                <button class="category" >NBA</button>
+                <button class="category" >Movies</button>
+                <button class="category" >NFL</button>
+                <button class="category" >News</button>
+                <button class="category" >MrBeast</button>
+                <button class="category" >Comedy</button>
+            </section>
+        </div>
+
+
+        <nav class="sidebar" >
+            <!-- 1st Section -->
+            <div class="sidebar-link" > 
+                <img src="icons/home.svg">
+                <div>Home</div> 
+            </div>
+            <div class="sidebar-link" >
+                <img src="icons/explore.svg">
+                <div>Explore</div> 
+            </div>
+            <div class="sidebar-link" >
+                <img src="icons/youtube-music.svg">
+                <div>YouTube Music</div> 
+            </div>
+            <div class="sidebar-link" >
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div> 
+            </div>
+            <hr/>
+
+            <!-- 2nd Section -->
+            <div class="sidebar-link" >
+                <img src="icons/library.svg">
+                <div>Library</div> 
+            </div>
+            <div class="sidebar_categories">
+                <i class="material-icons">history</i>
+                <span>History</span>
+            </div>
+            <div class="sidebar_categories">
+                <i class="material-icons">slideshow</i>
+                <span>Your Videos</span>
+            </div>
+            <div class="sidebar_categories">
+                <i class="material-icons">schedule</i>
+                <span>Watch Later</span>
+            </div>
+            <div class="sidebar_categories">
+                <i class="material-icons">thumb_up</i>
+                <span>Liked Videos</span>
+            </div>
+            <hr/>
+
+            <!-- 3th Section -->
+            <div class="sidebar_categories">
+                <i class="material-icons">settings</i>
+                <span>Settings</span>
+            </div>
+            <div class="sidebar_categories">
+                <i class="material-icons">flag</i>
+                <span>Report history</span>
+            </div>
+            <div class="sidebar_categories">
+                <i class="material-icons">help</i>
+                <span>Help</span>
+            </div>
+        </nav>
+
+
+
+
+
+        <main>
+            <section class="video-grid"> 
+                <!-- First Row -->
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/AWS Thumbnail -1.webp">
+                        <div class="video-time" >11:04:59</div>
+                    </div>
+
+                    <div class="video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class="profile-picture" src="Pictures/PFP-AWS.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                AWS Solution Architect Training for 2022 | 
+                                AWS Solution Architect Interview Questions | Simplilearn
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Simplilearn
+                            </p>
+                            <p class="video-stats">
+                                45k views &#183; Streamed 2 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Dog thumbnail.webp">
+                            <div class="video-time" >6:32</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/PFP-Dog.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Dog Reviews Food With Son | Tucker Taste Test 23
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Tucker Budzyn
+                            </p>
+                            <p class="video-stats">
+                                1.1M views &#183; 3 weeks ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/JAVA programming Course.webp">
+                        <div class="video-time" >4:11:00</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/FreecodeCamp.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Java Programming for Beginners - Full Course
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                freeCodeCamp.org  
+                            </p>
+                            <p class="video-stats">
+                                92K views &#183; 2 weeks ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Morissette.webp">
+                        <div class="video-time" >4:39</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/Wish-107.5.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Morissette covers "Secret Love Song" (Little Mix) LIVE on Wish 107.5 Bus
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Wish 107.5
+                            </p>
+                            <p class="video-stats">
+                                200M views &#183; 6 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Second Row -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Fortnite-funny-clips.webp">
+                        <div class="video-time" >10:35</div>
+                    </div>
+
+                    <div class="video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class="profile-picture" src="Pictures/Locandro-logo.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Fortnite Streamers FUNNIEST Clips of All Time!
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Locandro
+                            </p>
+                            <p class="video-stats">
+                                2.4M views &#183; Streamed 3 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Calc1.webp">
+                        <div class="video-time" >11:53:48</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/FreecodeCamp.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Calculus1 - Full College Course
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                freeCodeCamp.org  
+                            </p>
+                            <p class="video-stats">
+                                4.1M views &#183; 2 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/SG-Mrbeast.webp">
+                        <div class="video-time" >25:42</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/MrBeast-logo.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    $456,000 Squid Game In Real Life!
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                MrBeast
+                            </p>
+                            <p class="video-stats">
+                                293M views &#183; 10 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Flu.webp">
+                        <div class="video-time" >1:31</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/Inside-Edition.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Will This Flu Season Be the Worst One Yet?
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Inside Edition
+                            </p>
+                            <p class="video-stats">
+                                19K views &#183; 3 hours ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Third Row -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Military dog.webp">
+                        <div class="video-time">3:13</div>
+                    </div>
+
+                    <div class="video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class="profile-picture" src="Pictures/USA Today.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Soldierreunites with puppy he met overseas | Militarykind
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                USA TODAY
+                            </p>
+                            <p class="video-stats">
+                                9.4M views &#183; 3 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Master-Chef.webp">
+                        <div class="video-time" >32:21</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/MasterChef-logo.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Best Street Food Dishes | MasterChef Australia | MasterChef World
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                MasterChef World
+                            </p>
+                            <p class="video-stats">
+                                602K views &#183; 2 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/IronMan-Thanos.webp">
+                        <div class="video-time">2:23</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/Ironman-Thanos-logo.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    AVENGERS INFINITY WAR Iron Man Vs Thanos Fight Scene 4K Movie Clip
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                The Phoenix  
+                            </p>
+                            <p class="video-stats">
+                                23M views &#183; 3 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/AGT.webp">
+                        <div class="video-time" >4:39</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/Top-Viral-Moment.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    9 Y.O. Little Girl STUNS EVERYONE With AMAZING "My Heart Will Go On"
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Top Viral Talent
+                            </p>
+                            <p class="video-stats">
+                                13M views &#183; 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Forth Row -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Saudi-Arabia-plan.webp">
+                        <div class="video-time">3:40</div>
+                    </div>
+
+                    <div class="video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class="profile-picture" src="Pictures/Engadget-logo.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Saudi Arabias controversial mega-city project: The Line
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Engadget
+                            </p>
+                            <p class="video-stats">
+                                1.4M views &#183; 2 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Philippines-Street-food.webp">
+                        <div class="video-time">22:57</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/Mark W.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Filipino Street Food Tour - BALUT and KWEK KWEK at Quiapo Market, Manila, Philippines!
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Mark Wiens
+                            </p>
+                            <p class="video-stats">
+                                7.6M views &#183; 5 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/Lion.webp">
+                        <div class="video-time">50:24</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/Nat-gio-wild.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Win or Die (Full Episode) | Savage Kingdom
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Nat Geo Wild
+                            </p>
+                            <p class="video-stats">
+                                1.3M views &#183; 4 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnails" src="Thumbnails/car.webp">
+                        <div class="video-time">11:28</div>
+                    </div>
+
+                    <div class=" video-info-grid"> 
+                        <div class="channel-picture"> 
+                            <img class= "profile-picture" src="Pictures/trend-max.jpg">
+                        </div>
+                        <div class="video-info"> 
+                            <p class="video-title">
+                                <strong>
+                                    Top 10 FASTEST CARS In The World 2022
+                                </strong>
+                            </p>
+                            <p class="video-author">
+                                Trend Max
+                            </p>
+                            <p class="video-stats">
+                                2M views &#183; 8 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </body>
+</html>
